@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Manrope:wght@500;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Blanco: hsl(0, 0%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.elementos{
+    background-color: var(--Blanco);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.elemento{
+    background-color: var(--Dark-cyan);
+    min-height: 25rem;
+    max-width: 17rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.elemento .imagen{
+    margin-bottom: 1.5rem;
+}
+
+.elemento h1{
+    color: var(--Blanco);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.3rem;
+}
+
+.elemento p{
+    color: var(--Blanco);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.elemento button{
+    position: absolute;
+    background: var(--Blanco);
+    border: 2px solid var(--Blanco);
+    text-align: center;
+    padding: 12px 18px;
+    bottom: 0;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    color: var(--Dark-cyan);
+    cursor: pointer;
+}
+
+.uno{
+    background-color: var(--Bright-orange);
+}
+
+.dos{
+    background-color: var(--Dark-cyan);
+}
+
+.tres{
+    background-color: var(--Very-dark-cyan);
+}
+
+.uno button{
+    color: var(--Bright-orange);
+}
+
+.dos button{
+    color: var(--Dark-cyan);
+}
+
+.tres button{
+    color: var(--Very-dark-cyan);
+}
+
+button:hover{
+    background-color: transparent;
+    color: var(--Blanco);
+}
+
+@media (max-width:950px){
+
+    .elementos{
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+
+    .elemento{
+        min-width: 22rem;
+    }
+}
